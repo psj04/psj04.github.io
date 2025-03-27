@@ -1,0 +1,152 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* 기본 스타일 */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 컨테이너 */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 프로필 이미지 */
+.intro img {
+    border-radius: 50%;
+    border: 3px solid #333;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+/* 제목 스타일 */
+h1 {
+    font-size: 2rem;
+    color: #444;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* 그리드 스타일 */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.about-grid div {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 리스트 스타일 */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+/* 프로젝트 섹션 */
+.show-off {
+    margin-top: 40px;
+}
+
+.show-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.show-grid img {
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.show-grid img:hover {
+    transform: scale(1.1);
+}
+
+/* 링크 및 연락처 */
+.links-and-contact {
+    margin-top: 40px;
+}
+
+.links a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* 폼 스타일 */
+form {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .show-grid img {
+        width: 100%;
+    }
+}
